@@ -30,4 +30,12 @@ public class DomainSchema {
         ObjectMapper objectMapper = new ObjectMapper();
         return objectMapper.writeValueAsString(schema.getAnchor());
     }
+    public String getKnots () throws JsonProcessingException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        return objectMapper.writeValueAsString(schema.getKnot());
+    }
+    public String getTies () throws JsonProcessingException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        return objectMapper.writeValueAsString(schema.getTie());
+    }
 }
